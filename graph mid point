@@ -1,0 +1,69 @@
+Lisa, Tom, and Sam, known as the Math Buddies, were well-regarded for their math skills and were favorites of their teacher, Mrs. Kim. Living in the same neighborhood, they cheerfully welcomed a new friend, Max. Max, excited to join their group, asked about Lisa's house location. Lisa, testing Max's math skills, challenged him to find the midpoint of the line connecting Tom's and Sam's houses. Intrigued yet puzzled, Max sought your help. Can you assist Max in solving this straightforward math puzzle?
+
+Input Format
+
+The first integer corresponds to x1. The second integer corresponds to y1. The third and fourth integers correspond to x2 and y2, respectively.
+
+Constraints
+
+Null
+
+Output Format
+
+Print the coordinates of the midpoint in the format (x, y).
+
+Sample Input 0
+
+0
+0
+8
+12
+Sample Output 0
+
+Max's house is located at (4.0, 6.0)
+Sample Input 1
+
+1
+1
+1
+1
+Sample Output 1
+
+Max's house is located at (1.0, 1.0)
+Sample Input 2
+
+2
+4
+10
+15
+Sample Output 2
+
+Max's house is located at (6.0, 9.5)
+Sample Input 3
+
+-5
+-3
+5
+3
+Sample Output 3
+
+Max's house is located at (0.0, 0.0)
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int x1=sc.nextInt();
+        int y1=sc.nextInt();
+        int x2=sc.nextInt();
+        int y2=sc.nextInt();
+        float n1=(x1+x2)/2;
+        float n2=(float)(y1+y2)/2;
+        System.out.print("Max's house is located at ("+n1);
+         System.out.print(", "+n2+")");
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
